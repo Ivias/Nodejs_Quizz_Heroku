@@ -17,7 +17,7 @@ exports.index = function(req, res) {
  if(req.query.search) {
     var filtro  = (req.query.search || '').replace(" ", "%");
     models.Quiz.findAll({where:["pregunta like ?", '%'+filtro+'%'],order:'pregunta ASC'}).then(function(quizes){
-      res.render('quizes/index', {quizes: quizes});
+      res.render('quizes/index', {quizes: quizes, errors: []});
     }).catch(function(error) { next(error);});
 
   } else {
@@ -113,5 +113,5 @@ exports.destroy = function(req, res) {
 
 //GET /autor
 exports.autor = function(req,res) {
-	res.render('autor');
+	res.render('autor',{ quiz: req.quiz, errors: []});
 };
