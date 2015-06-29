@@ -1,102 +1,102 @@
-2015-06-26T21:58:26.394185+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
-2015-06-26T21:58:26.394190+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
-2015-06-26T21:58:26.394188+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
-2015-06-26T21:58:31.258841+00:00 heroku[router]: at=info method=GET path="/" host=iquiz-2015.herokuapp.com request_id=d4cf7168-7ab2-42ec-9fae-fef887419d22 fwd="89.141.112.118" dyno=web.1 connect=1ms service=32ms status=304 bytes=144
-2015-06-26T21:58:31.255229+00:00 app[web.1]: [0mGET / [36m304 [0m29.395 ms - -[0m
-2015-06-26T21:58:31.444955+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=0c8ef879-781c-4b8a-8f2b-1d524dbc7afb fwd="89.141.112.118" dyno=web.1 connect=1ms service=28ms status=304 bytes=236
-2015-06-26T21:58:31.444775+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m23.018 ms - -[0m
-2015-06-26T21:58:31.648306+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m1.024 ms - -[0m
-2015-06-26T21:58:31.649341+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=679b9a21-47fe-490d-af58-9662926297fb fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
-2015-06-26T21:58:31.679351+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=d5184c88-1d5d-4af4-8f62-a83af68872d4 fwd="89.141.112.118" dyno=web.1 connect=1ms service=26ms status=304 bytes=236
-2015-06-26T21:58:31.676135+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m9.957 ms - -[0m
-2015-06-26T21:58:31.827394+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m1.159 ms - -[0m
-2015-06-26T21:58:31.838995+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=18e62903-7a4e-4ddc-8311-7b02ca8f3032 fwd="89.141.112.118" dyno=web.1 connect=1ms service=12ms status=304 bytes=236
-2015-06-26T21:58:32.069532+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=840bf40c-e007-4ce5-818d-b7f8791a64fd fwd="89.141.112.118" dyno=web.1 connect=1ms service=50ms status=304 bytes=236
-2015-06-26T21:58:32.022811+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m2.023 ms - -[0m
-2015-06-26T21:58:32.677332+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
-2015-06-26T21:58:32.685386+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
-2015-06-26T21:58:32.685392+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
-2015-06-26T21:58:32.685394+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
-2015-06-26T21:58:32.685398+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
-2015-06-26T21:58:32.685396+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
-2015-06-26T21:58:32.685399+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
-2015-06-26T21:58:32.685402+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
-2015-06-26T21:58:32.685401+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
-2015-06-26T21:58:32.685405+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
-2015-06-26T21:58:32.685404+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
-2015-06-26T21:58:38.065445+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
-2015-06-26T21:58:38.068410+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
-2015-06-26T21:58:38.068416+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
-2015-06-26T21:58:38.068414+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
-2015-06-26T21:58:38.068418+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
-2015-06-26T21:58:38.068419+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
-2015-06-26T21:58:38.068421+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
-2015-06-26T21:58:38.068422+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
-2015-06-26T21:58:38.068424+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
-2015-06-26T21:58:38.068425+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
-2015-06-26T21:58:38.068427+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
-2015-06-26T21:58:39.648839+00:00 heroku[router]: at=info method=GET path="/autor" host=iquiz-2015.herokuapp.com request_id=4396bea9-ba92-4048-a388-f931da52abdc fwd="89.141.112.118" dyno=web.1 connect=12ms service=21ms status=500 bytes=3187
-2015-06-26T21:58:39.829547+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=af854df4-317a-4f89-b12c-a77e97fc7716 fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
-2015-06-26T21:58:39.638142+00:00 app[web.1]: [0mGET /autor [31m500 [0m11.410 ms - 2972[0m
-2015-06-26T21:58:39.828841+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m0.922 ms - -[0m
-2015-06-26T21:58:39.948744+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m5.346 ms - -[0m
-2015-06-26T21:58:39.948557+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=83b1aa21-a4b7-4cc0-a7b9-f0f347af5bf9 fwd="89.141.112.118" dyno=web.1 connect=2ms service=6ms status=304 bytes=236
-2015-06-26T21:58:40.058843+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=11085669-2bc6-4fe6-9d5d-ca7e8f562aef fwd="89.141.112.118" dyno=web.1 connect=1ms service=4ms status=304 bytes=236
-2015-06-26T21:58:40.056552+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m1.962 ms - -[0m
-2015-06-26T21:58:40.297391+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m0.959 ms - -[0m
-2015-06-26T21:58:40.298751+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=e8a70f80-5a3b-498c-b99d-4b37f69a59ec fwd="89.141.112.118" dyno=web.1 connect=2ms service=3ms status=304 bytes=236
-2015-06-26T21:58:40.629260+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=52e54438-8292-423f-86ca-981e8494f78b fwd="89.141.112.118" dyno=web.1 connect=1ms service=22ms status=304 bytes=236
-2015-06-26T21:58:40.617864+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m1.243 ms - -[0m
-2015-06-26T21:58:42.257243+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
-2015-06-26T21:58:42.265620+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
-2015-06-26T21:58:42.265603+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
-2015-06-26T21:58:42.265612+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
-2015-06-26T21:58:42.265621+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
-2015-06-26T21:58:42.265617+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
-2015-06-26T21:58:42.265609+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
-2015-06-26T21:58:42.265613+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
-2015-06-26T21:58:42.265618+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
-2015-06-26T21:58:42.265615+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
-2015-06-26T21:58:42.265623+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
-2015-06-26T21:58:45.531616+00:00 heroku[router]: at=info method=GET path="/" host=iquiz-2015.herokuapp.com request_id=8ad29a7c-89fe-45fe-808b-b451fed70082 fwd="89.141.112.118" dyno=web.1 connect=1ms service=9ms status=304 bytes=144
-2015-06-26T21:58:45.529581+00:00 app[web.1]: [0mGET / [36m304 [0m5.570 ms - -[0m
-2015-06-26T21:58:45.763047+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=38dcb7ec-4868-4334-86d0-1a31c855b1fd fwd="89.141.112.118" dyno=web.1 connect=1ms service=4ms status=304 bytes=236
-2015-06-26T21:58:45.761472+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m2.831 ms - -[0m
-2015-06-26T21:58:46.021934+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=a84f8938-9c83-4c2b-8ce6-e78b528867f6 fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
-2015-06-26T21:58:46.020414+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m1.860 ms - -[0m
-2015-06-26T21:58:46.151934+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=641d7879-6d71-4537-879d-59ca43dcac2c fwd="89.141.112.118" dyno=web.1 connect=1ms service=14ms status=304 bytes=236
-2015-06-26T21:58:46.134271+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m1.534 ms - -[0m
-2015-06-26T21:58:46.287705+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m1.092 ms - -[0m
-2015-06-26T21:58:46.289740+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=3a96808d-120c-4c40-8789-2efa7bd03ed8 fwd="89.141.112.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=236
-2015-06-26T21:58:46.428728+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=ba85084e-a0af-43a0-afde-990d4435acfd fwd="89.141.112.118" dyno=web.1 connect=2ms service=3ms status=304 bytes=236
-2015-06-26T21:58:46.426832+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m0.863 ms - -[0m
-2015-06-26T21:58:47.586932+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
-2015-06-26T21:58:47.586936+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
-2015-06-26T21:58:47.586938+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
-2015-06-26T21:58:47.586940+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
-2015-06-26T21:58:47.586942+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
-2015-06-26T21:58:47.586943+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
-2015-06-26T21:58:47.586945+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
-2015-06-26T21:58:47.586946+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
-2015-06-26T21:58:47.586949+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
-2015-06-26T21:58:47.586948+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
-2015-06-26T21:58:47.919982+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=28906599-83a9-4e82-b95b-933a7afe22bb fwd="89.141.112.118" dyno=web.1 connect=10ms service=30003ms status=503 bytes=0
-2015-06-26T21:58:47.920550+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:58:47.584399+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
-2015-06-26T21:58:52.852914+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=b0ad212b-3aa1-4409-bc62-5bd9e8a5977a fwd="89.141.112.118" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
-2015-06-26T21:58:52.856283+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:58:56.390722+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=a2cc80c6-2206-4b50-b06d-fcb7583f00b4 fwd="89.141.112.118" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
-2015-06-26T21:58:56.390895+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:59:02.663354+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=b76ba2bd-d73e-4d43-85ce-fd6afd78c8d9 fwd="89.141.112.118" dyno=web.1 connect=1ms service=30008ms status=503 bytes=0
-2015-06-26T21:59:02.664577+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:59:08.061946+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=f1b49e21-1adb-455e-b929-94e159bc14a3 fwd="89.141.112.118" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
-2015-06-26T21:59:08.062813+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:59:12.224245+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=9b3ab4f6-89af-44c6-8664-1d1284c0ae09 fwd="89.141.112.118" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
-2015-06-26T21:59:12.229240+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:59:17.586229+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=ef768260-4b5f-451c-a2f7-a1c2aa0baa92 fwd="89.141.112.118" dyno=web.1 connect=1ms service=30007ms status=503 bytes=0
-2015-06-26T21:59:17.588337+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
-2015-06-26T21:59:17.922295+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=24026d42-81da-4cc8-bd5e-579a5000f3f8 fwd="89.141.112.118" dyno=web.1 connect=1ms service=17ms status=304 bytes=236
-2015-06-26T21:59:18.087872+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=eeb853
-f4-09a1-420b-9fcc-a8a12bd493b5 fwd="89.141.112.118" dyno=web.1 connect=9ms service=2ms status=304 bytes=236
-2015-06-26T21:59:17.912776+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m2.748 ms - -[0m
-2015-06-26T21:59:18.085920+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m0.961 ms - -[0m
+2015-06-26T22:47:11.675289+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
+2015-06-26T22:47:11.675291+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
+2015-06-26T22:47:11.675292+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
+2015-06-26T22:47:11.675294+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
+2015-06-26T22:47:11.675296+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-06-26T22:47:15.451643+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
+2015-06-26T22:47:15.454359+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
+2015-06-26T22:47:15.454363+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
+2015-06-26T22:47:15.454365+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
+2015-06-26T22:47:15.454366+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
+2015-06-26T22:47:15.454368+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
+2015-06-26T22:47:15.454373+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
+2015-06-26T22:47:15.454370+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
+2015-06-26T22:47:15.454374+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
+2015-06-26T22:47:15.454371+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
+2015-06-26T22:47:15.454376+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-06-26T22:47:19.301732+00:00 heroku[router]: at=info method=GET path="/" host=iquiz-2015.herokuapp.com request_id=1ff391b4-26f0-402e-8d5d-a9f77627c89a fwd="89.141.112.118" dyno=web.1 connect=2ms service=4ms status=304 bytes=144
+2015-06-26T22:47:19.300446+00:00 app[web.1]: [0mGET / [36m304 [0m1.670 ms - -[0m
+2015-06-26T22:47:19.450236+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m0.755 ms - -[0m
+2015-06-26T22:47:19.441611+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=7c4337a3-ad5e-4abe-be0e-a26ddd93c82e fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
+2015-06-26T22:47:19.455437+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=6a343bde-162c-4b33-8b55-c2d695540a28 fwd="89.141.112.118" dyno=web.1 connect=7ms service=6ms status=304 bytes=236
+2015-06-26T22:47:19.440077+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m1.329 ms - -[0m
+2015-06-26T22:47:19.451311+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m0.557 ms - -[0m
+2015-06-26T22:47:19.453294+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=90a4a744-b313-4657-8130-6c4b5145e649 fwd="89.141.112.118" dyno=web.1 connect=4ms service=4ms status=304 bytes=236
+2015-06-26T22:47:20.642860+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
+2015-06-26T22:47:20.645967+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
+2015-06-26T22:47:20.645971+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
+2015-06-26T22:47:20.645973+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
+2015-06-26T22:47:20.645974+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
+2015-06-26T22:47:20.645977+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
+2015-06-26T22:47:20.645976+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
+2015-06-26T22:47:20.645979+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
+2015-06-26T22:47:20.645980+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
+2015-06-26T22:47:20.645982+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
+2015-06-26T22:47:20.645984+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-06-26T22:47:21.616199+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
+2015-06-26T22:47:21.620919+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
+2015-06-26T22:47:21.620921+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
+2015-06-26T22:47:21.620923+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
+2015-06-26T22:47:21.620925+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
+2015-06-26T22:47:21.620927+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
+2015-06-26T22:47:21.620928+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
+2015-06-26T22:47:21.620930+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
+2015-06-26T22:47:21.620931+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
+2015-06-26T22:47:21.620933+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
+2015-06-26T22:47:21.620934+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-06-26T22:47:41.632234+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=4777c285-b09a-45ec-9108-89bf4ea39dea fwd="89.141.112.118" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
+2015-06-26T22:47:41.635212+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
+2015-06-26T22:47:45.456373+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=bd5c87ed-ec9f-4cab-a0fb-c7bfbb859add fwd="89.141.112.118" dyno=web.1 connect=3ms service=30010ms status=503 bytes=0
+2015-06-26T22:47:45.458453+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
+2015-06-26T22:47:50.641609+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=a7eb00e2-c33c-4314-9bd3-88360ecd3307 fwd="89.141.112.118" dyno=web.1 connect=3ms service=30001ms status=503 bytes=0
+2015-06-26T22:47:50.643548+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
+2015-06-26T22:47:51.615755+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=b39af4c1-660a-4230-a5bc-de72378d6e36 fwd="89.141.112.118" dyno=web.1 connect=1ms service=30002ms status=503 bytes=0
+2015-06-26T22:47:51.618504+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
+2015-06-26T22:48:44.404113+00:00 heroku[router]: at=info method=GET path="/" host=iquiz-2015.herokuapp.com request_id=8f857648-fff2-4429-a552-c6672ffc82f4 fwd="89.141.112.118" dyno=web.1 connect=13ms service=5ms status=304 bytes=144
+2015-06-26T22:48:44.400075+00:00 app[web.1]: [0mGET / [36m304 [0m2.339 ms - -[0m
+2015-06-26T22:48:44.745737+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=ef25fe8d-ad41-461a-91ec-12f3a5182c99 fwd="89.141.112.118" dyno=web.1 connect=1ms service=4ms status=200 bytes=830
+2015-06-26T22:48:44.743034+00:00 app[web.1]: [0mGET /stylesheets/style.css [32m200 [0m1.481 ms - 544[0m
+2015-06-26T22:48:44.881427+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=c57c1805-a704-43be-9f0e-65e3b9bc8640 fwd="89.141.112.118" dyno=web.1 connect=4ms service=5ms status=200 bytes=552
+2015-06-26T22:48:45.003742+00:00 app[web.1]: [0mGET /stylesheets/wide.css [32m200 [0m1.440 ms - 267[0m
+2015-06-26T22:48:44.877963+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [32m200 [0m1.979 ms - 266[0m
+2015-06-26T22:48:45.005745+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=95d4dc6f-c805-4386-9485-1619e5d2d450 fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=200 bytes=553
+2015-06-26T22:48:45.268274+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=02dacb5e-13fa-46c1-9156-5d35c10ba5fa fwd="89.141.112.118" dyno=web.1 connect=10ms service=4ms status=200 bytes=1426
+2015-06-26T22:48:45.264021+00:00 app[web.1]: [0mGET /favicon.ico [32m200 [0m1.416 ms - 1150[0m
+2015-06-26T22:48:46.932377+00:00 heroku[router]: at=info method=GET path="/" host=iquiz-2015.herokuapp.com request_id=6c30243d-129f-457f-bf90-514d7dbb442f fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=144
+2015-06-26T22:48:46.930180+00:00 app[web.1]: [0mGET / [36m304 [0m1.836 ms - -[0m
+2015-06-26T22:48:47.099977+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m0.556 ms - -[0m
+2015-06-26T22:48:47.098589+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=11b8659a-0e23-4009-adfa-70757c422362 fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
+2015-06-26T22:48:47.116869+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=49bfbc4f-0d09-4150-8d67-6c7e5e883e57 fwd="89.141.112.118" dyno=web.1 connect=2ms service=2ms status=304 bytes=236
+2015-06-26T22:48:47.096264+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m0.902 ms - -[0m
+2015-06-26T22:48:47.112769+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m1.183 ms - -[0m
+2015-06-26T22:48:47.102792+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=6632f1a5-3f1f-4531-8676-16652404c97a fwd="89.141.112.118" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
+2015-06-26T22:48:47.385078+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=a75d03e0-b7a0-48a9-826f-4c479b0b4431 fwd="89.141.112.118" dyno=web.1 connect=12ms service=5ms status=304 bytes=236
+2015-06-26T22:48:47.378444+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m1.060 ms - -[0m
+2015-06-26T22:48:49.169971+00:00 app[web.1]: Executing (default): SELECT "id", "pregunta", "respuesta", "tema", "createdAt", "updatedAt" FROM "Quizzes" AS "Quiz";
+2015-06-26T22:48:49.175905+00:00 app[web.1]: Unhandled rejection ReferenceError: next is not defined
+2015-06-26T22:48:49.175908+00:00 app[web.1]:     at null.<anonymous> (/app/controllers/quiz_controller.js:28:27)
+2015-06-26T22:48:49.175910+00:00 app[web.1]:     at tryCatcher (/app/node_modules/sequelize/node_modules/bluebird/js/main/util.js:24:31)
+2015-06-26T22:48:49.175911+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:454:31)
+2015-06-26T22:48:49.175913+00:00 app[web.1]:     at Promise._settlePromiseAt (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:530:18)
+2015-06-26T22:48:49.175915+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:646:14)
+2015-06-26T22:48:49.175916+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:182:16)
+2015-06-26T22:48:49.175918+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:192:10)
+2015-06-26T22:48:49.175919+00:00 app[web.1]:     at Async.drainQueues (/app/node_modules/sequelize/node_modules/bluebird/js/main/async.js:15:14)
+2015-06-26T22:48:49.175921+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-06-26T22:48:56.068119+00:00 heroku[router]: at=info method=GET path="/autor" host=iquiz-2015.herokuapp.com request_id=531448dc-4b50-480d-ae7e-e33dcd270cdf fwd="89.141.112.118" dyno=web.1 connect=8ms service=5ms status=304 bytes=144
+2015-06-26T22:48:56.063713+00:00 app[web.1]: [0mGET /autor [36m304 [0m2.110 ms - -[0m
+2015-06-26T22:48:56.263136+00:00 app[web.1]: [0mGET /stylesheets/wide.css [36m304 [0m0.627 ms - -[0m
+2015-06-26T22:48:56.267681+00:00 heroku[router]: at=info method=GET path="/stylesheets/wide.css" host=iquiz-2015.herokuapp.com request_id=355cd002-aca9-417b-b60f-8ac5ff1b0473 fwd="89.141.112.118" dyno=web.1 connect=1ms service=2ms status=304 bytes=236
+2015-06-26T22:48:56.261580+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=iquiz-2015.herokuapp.com request_id=0f5a11e1-07f3-4c49-8787-5b61687d0e66 fwd="89.141.112.118" dyno=web.1 connect=2ms service=2ms status=304 bytes=236
+2015-06-26T22:48:56.385459+00:00 heroku[router]: at=info method=GET path="/stylesheets/smartphone.css" host=iquiz-2015.herokuapp.com request_id=597d22d2-1758-41d0-83d0-89846da3999e fwd="89.141.112.118" dyno=web.1 connect=2ms service=3ms status=304 bytes=236
+2015-06-26T22:48:56.260671+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m0.873 ms - -[0m
+2015-06-26T22:48:56.383834+00:00 app[web.1]: [0mGET /stylesheets/smartphone.css [36m304 [0m0.861 ms - -[0m
+2015-06-26T22:48:56.565974+00:00 heroku[router]: at=info method=GET path="/images/frog.jpg" host=iquiz-2015.herokuapp.com request_id=fe86f079-4503-4615-8c0e-3749b537807d fwd="89.141.112.118" dyno=web.1 connect=2ms service=4ms status=200 bytes=8135
+2015-06-26T22:48:56.540699+00:00 heroku[router]: at=info method=GET path="/images/Video.mp4" host=iquiz-2015.herokuapp.com request_id=d7b61261-3fe4-4c0a-90b1-8681a537b30a fwd="89.141.112.118" dyno=web.1 connect=3ms service=34ms status=206 bytes=391822
+2015-06-26T22:48:56.519080+00:00 app[web.1]: [0mGET /images/Video.mp4 [32m206 [0m11.462 ms - 391494[0m
+2015-06-26T22:48:56.563135+00:00 app[web.1]: [0mGET /images/frog.jpg [32m200 [0m1.762 ms - 7860[0m
+2015-06-26T22:48:57.637491+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=iquiz-2015.herokuapp.com request_id=d8a47005-28de-420d-bdf4-28237a3a7939 fwd="89.141.112.118" dyno=web.1 connect=2ms service=3ms status=304 bytes=236
+2015-06-26T22:48:57.638486+00:00 app[web.1]: [0mGET /favicon.ico [36m304 [0m1.750 ms - -[0m
+2015-06-26T22:49:19.148965+00:00 heroku[router]: at=error
+ code=H12 desc="Request timeout" method=GET path="/quizes" host=iquiz-2015.herokuapp.com request_id=5bce4fb0-50f7-4ca7-b077-484cf908dd05 fwd="89.141.112.118" dyno=web.1 connect=2ms service=30001ms status=503 bytes=0
+2015-06-26T22:49:19.152935+00:00 app[web.1]: [0mGET /quizes [32m- [0m- ms - -[0m
